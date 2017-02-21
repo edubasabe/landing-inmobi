@@ -1,0 +1,38 @@
+@media (min-width: 767px) {
+  .navbar {
+    padding: 20px 0;
+    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    transition: background .5s ease-in-out, padding .5s ease-in-out;
+  }
+  .top-nav-collapse {
+    padding: 0;
+  }
+}
+
+.intro-section {
+  background: #fff;
+  height: 100%;
+  padding-top: 150px;
+  text-align: center;
+}
+
+.about-section {
+  background: #eee;
+  height: 100%;
+  padding-top: 150px;
+  text-align: center;
+}
+
+.services-section {
+  background: #fff;
+  height: 100%;
+  padding-top: 150px;
+  text-align: center;
+}
+
+.contact-section {
+  background: #eee;
+  height: 100%;
+  padding-top: 150px;
+  text-align: center;
+}
