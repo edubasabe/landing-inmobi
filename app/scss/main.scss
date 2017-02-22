@@ -1,38 +1,7 @@
-@media(min-width: 767px) {
-    .navbar {
-        padding: 20px 0;
-        transition: background .5s ease-in-out, padding .5s ease-in-out;
-    }
-
-    .top-nav-collapse {
-        padding: 0;
-    }
-}
-
-.intro-section {
-    background: #fff;
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
-}
-
-.about-section {
-  background: #eee;
-  height: 100%;
-  padding-top: 150px;
-  text-align: center;
-}
-
-.services-section {
-  background: #fff;
-  height: 100%;
-  padding-top: 150px;
-  text-align: center;
-}
-
-.contact-section {
-  background: #eee;
-  height: 100%;
-  padding-top: 150px;
-  text-align: center;
-}
+@import './base/_responsive';
+@import './base/_global';
+@import './modules/_variables';
+@import './modules/_bootswatch';
+@import './modules/_section';
+@import './modules/_slider';
+@import './modules/_form';

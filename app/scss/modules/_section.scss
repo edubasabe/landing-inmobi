@@ -1,0 +1,34 @@
+.section {
+    position: relative;
+
+    &--padding {
+        padding: 8rem 0;
+    }
+}
+
+.container-flotante {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+
+    @include xxs-device {
+      min-width: 32rem;
+    }
+}
+
+#section-features {
+    .container:nth-child(2) {
+        .row {
+            &:first-child {
+              @include xs-device {
+                margin-bottom: 4rem;
+              }
+              @include sm-device {
+                margin-bottom: 6rem;
+              }
+            }
+        }
+    }
+}

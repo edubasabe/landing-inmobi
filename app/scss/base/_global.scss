@@ -1,0 +1,33 @@
+$negro: #000;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+}
+
+.main {
+  @include xxs-device {
+    margin-top: 5rem;
+  }
+
+  @include sm-device {
+    margin-top: 9rem;
+  }
+}
+
+@media(min-width: 767px) {
+    .navbar {
+        padding: 20px 0;
+        transition: background .5s ease-in-out, padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}

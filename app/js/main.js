@@ -1,4 +1,18 @@
-//jQuery to collapse the navbar on scroll
+//------
+// Funciones
+//------
+
+function isMobile() {
+  if ( $(window).width() <= 1190) {
+    return true;
+    console.log('Es Mobile');
+  }
+}
+
+//------
+// jQuery to collapse the navbar on scroll
+//------
+
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
@@ -17,3 +31,43 @@ $(function() {
         event.preventDefault();
     });
 });
+
+//------
+// Owl Carousel
+//------
+
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+
+//------
+// Mover en Responsive
+//------
+
+if ( isMobile() ) {
+
+  $("#section-features").append("<div class='container' id='cotiza'><div class='row'><div class='col-xs-12' id='form-container'></div></div></div>");
+  $("#formulario").appendTo("#form-container");
+  $("#cotiza").prependTo('#section-features');
+
+  // Remover el 2do col-sm-6
+  $(".container-flotante .row div:nth-child(2)").remove();
+  // Cambiar la class a col-sm-12
+  $(".container-flotante .row div").attr('class', 'col-xs-12 col-sm-12')
+
+  $(".item img").attr('src','http://placehold.it/320x300')
+
+}

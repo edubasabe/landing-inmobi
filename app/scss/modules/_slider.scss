@@ -1,0 +1,14 @@
+.slider {
+    .owl-dots {
+        left: 50%;
+        margin-top: -30px !important;
+        position: absolute;
+        transform: translateX(-50%);
+    }
+
+    @include xxs-device {
+      .owl-stage {
+        min-height: 30rem;
+      }
+    }
+}
