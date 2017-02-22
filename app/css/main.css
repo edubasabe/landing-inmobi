@@ -357,6 +357,12 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  #section-features .container:nth-child(1) .row {
+    margin-bottom: 6rem;
+  }
+}
+
 @media only screen and (min-width: 480px) {
   #section-features .container:nth-child(2) .row:first-child {
     margin-bottom: 4rem;
@@ -367,6 +373,36 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
   #section-features .container:nth-child(2) .row:first-child {
     margin-bottom: 6rem;
   }
+}
+
+#section-tipos {
+  background: #999;
+}
+
+#section-tipos .tab-pane .row {
+  padding-top: 3rem;
+}
+
+.copyright {
+  display: block;
+  padding: 1.5rem 0;
+}
+
+@media only screen and (min-width: 320px) {
+  .copyright {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .copyright {
+    text-align: inherit;
+  }
+}
+
+.nopadding {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .slider .owl-dots {
@@ -380,6 +416,21 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
 @media only screen and (min-width: 320px) {
   .slider .owl-stage {
     min-height: 30rem;
+  }
+  .slider h2 {
+    text-align: center;
+  }
+  .slider .lead {
+    text-align: justify;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .slider h2 {
+    text-align: inherit;
+  }
+  .slider .lead {
+    text-align: inherit;
   }
 }
 

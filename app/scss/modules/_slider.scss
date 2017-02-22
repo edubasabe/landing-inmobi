@@ -10,5 +10,25 @@
       .owl-stage {
         min-height: 30rem;
       }
+
+      h2 {
+        text-align: center;
+      }
+
+      .lead {
+        text-align: justify;
+      }
     }
+
+    @include sm-device {
+      h2 {
+        text-align: inherit;;
+      }
+
+      .lead {
+        text-align: inherit;
+      }
+    }
+
+
 }
