@@ -2,7 +2,12 @@
     position: relative;
 
     &--padding {
-        padding: 8rem 0;
+        @include xxs-device {
+            padding: 4rem 0;
+        }
+        @include sm-device {
+            padding: 8rem 0;
+        }
     }
 }
 
@@ -17,14 +22,18 @@
     }
 }
 
+//-----
+// Section Features
+//-----
+
 #section-features {
     .container {
         &:nth-child(1) {
-          .row {
-            @include sm-device {
-              margin-bottom: 6rem;
+            .row {
+                @include sm-device {
+                    margin-bottom: 6rem;
+                }
             }
-          }
         }
 
         &:nth-child(2) {
@@ -41,31 +50,114 @@
         }
     }
 }
+//-----
+// Section Tipos
+//-----
 
 #section-tipos {
-  background: #999;
+    background: $naranja url('../images/bg-tipos.png') no-repeat;
+    color: #fff;
 
-  .tab-pane {
-    .row {
-      padding-top: 3rem;
+    a {
+        color: $dark-blue;
     }
-  }
+
+    .nav {
+        & > li {
+            & > {
+                a {
+                    // background-color: $dark-blue;
+                    color: #fff;
+
+                    &:focus {
+                        background-color: rgba(#fff, .3);
+                    }
+
+                    &:hover {
+                        background-color: rgba(#fff, .3);
+                    }
+                }
+            }
+        }
+    }
+
+    .dropdown-menu {
+        & > {
+            .active {
+                & > a {
+                    background-color: #f2f2f2;
+
+                    &:focus {
+                        background-color: #f2f2f2;
+                    }
+
+                    &:hover {
+                        background-color: #f2f2f2;
+                    }
+                }
+            }
+        }
+    }
+
+    .nav-pills {
+        & > li.active {
+            & > a {
+                background-color: $dark-blue;
+                color: #fff;
+
+                &:focus {
+                    background-color: $dark-blue;
+                }
+
+                &:hover {
+                    background-color: $dark-blue;
+                }
+            }
+        }
+    }
+
+    .table {
+        max-width: 32rem;
+
+        td {
+            padding-left: 0;
+        }
+    }
+
+    h3 {
+        color: $dark-blue;
+        font-size: 3.2rem;
+        margin-bottom: 0;
+        text-transform: uppercase;
+    }
+
+    h4 {
+        font-size: 2.4rem;
+        margin-top: 0;
+    }
+
+    .tab-pane {
+        .row {
+            padding-top: 3rem;
+        }
+    }
 }
+//----
+// Otros
+//----
 
 .copyright {
-  display: block;
-  padding: 1.5rem 0;
-
-  @include xxs-device {
-    text-align: center;
-  }
-
-  @include sm-device {
-    text-align: inherit;
-  }
+    display: block;
+    padding: 1.5rem 0;
+    @include xxs-device {
+        text-align: center;
+    }
+    @include sm-device {
+        text-align: inherit;
+    }
 }
 
 .nopadding {
-  padding-left: 0;
-  padding-right: 0;
+    padding-left: 0;
+    padding-right: 0;
 }

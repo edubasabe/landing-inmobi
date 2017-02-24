@@ -25,7 +25,7 @@ rules:
   no-css-comments: 1
   no-debug: 1
   no-disallowed-properties: 0
-  no-duplicate-properties: 1
+  no-duplicate-properties: 0
   no-empty-rulesets: 1
   no-extends: 0
   no-ids: 0
@@ -64,7 +64,7 @@ rules:
   clean-import-paths: 0
   empty-args: 1
   hex-length: 1
-  hex-notation: 1
+  hex-notation: 0
   indentation: 0
   leading-zero: 1
   nesting-depth: 0

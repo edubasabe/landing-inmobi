@@ -1,0 +1,42 @@
+.btn {
+  &-primary {
+    background-color: $naranja;
+    border-color: $dark-naranja;
+
+    &:hover,
+    &:focus,
+    &:visited {
+      background-color: $naranja;
+      border-color: $naranja;
+    }
+
+    &:active {
+      &:focus {
+        background-color: $dark-naranja;
+        border-color: $dark-naranja;
+      }
+    }
+  }
+
+  &-secondary {
+    background-color: $dark-blue;
+    border-color: $blue;
+    color: #fff;
+
+    &:hover,
+    &:focus,
+    &:visited {
+      background-color: $blue;
+      border-color: $dark-blue;
+      color: #fff;
+    }
+
+    &:active {
+      &:focus {
+        background-color: $blue;
+        border-color: $dark-naranja;
+        color: #fff;
+      }
+    }
+  }
+}

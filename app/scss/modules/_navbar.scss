@@ -1,0 +1,20 @@
+.navbar {
+    padding: 0;
+    
+    &-brand {
+        height: auto;
+    }
+
+    &-toggle {
+        margin-bottom: (6rem / 2) - 1.7;
+        margin-top: (6rem / 2) - 1.7;
+    }
+
+    &-default {
+        .navbar-nav {
+            a {
+                border-radius: 3rem;
+            }
+        }
+    }
+}

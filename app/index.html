@@ -14,6 +14,7 @@
     <!-- <link rel="stylesheet" href="css/flatly.css"> -->
     <link rel="stylesheet" href="css/main.css">
     <!-- endbuild -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -32,12 +33,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                    <a class="navbar-brand page-scroll" href="#page-top">Inmobiliaria</a>
+                    <a class="navbar-brand page-scroll" href="#page-top"><img src="./images/ictinos@1x.png" srcset="./images/ictinos@2x.png 2x, ./images/ictinos@2x.png 3x" alt="Ictinos Logo"><span class="sr-only">Ictinos Inmobiliaria</span></a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse navbar-ex1-collapse">
-                    <ul class="nav navbar-nav">
+                    <ul class="nav navbar-nav navbar-right">
                         <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
                         <li class="hidden">
                             <a class="page-scroll" href="#page-top"></a>
@@ -55,52 +56,502 @@
 
         <!-- Slider Section -->
         <section id="section-slider" class="section slider">
+            <img src="./images/fibaro-mobile-bottom.png" alt="Fibaro" class="img-responsive mobilehand">
             <div class="container container-flotante">
                 <div class="row">
                     <div class="col-xs-12 col-sm-6">
-                        <h2>The quick brown fox jumps</h2>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. </p>
+                        <img src="./images/varas-gallardo-logo-xs.png" alt="Varas Gallardo" class="img-responsive">
+                        <h2 class="title">Tu vida crece</h2>
+                        <p class="lead">en el corazón de providencia con tu hogar inteligente</p>
                     </div>
                     <div class="col-xs-12 col-sm-6">
+                        <!--
                         <form class="form" action="index.html" method="post" id="formulario">
                             <legend>Solicitar Cotización</legend>
-                            <!-- nombre -->
+
                             <div class="form-group">
                                 <label for="nombre" class="sr-only">Nombre</label>
                                 <input id="nombre" name="nombre" type="text" placeholder="Nombre" class="form-control input-md">
                             </div>
-                            <!-- email -->
+
                             <div class="form-group">
                                 <label for="email" class="sr-only">Email</label>
                                 <input id="email" name="email" type="email" placeholder="Email" class="form-control input-md">
                             </div>
-                            <!-- teléfono -->
+
                             <div class="form-group">
                                 <label for="telefono" class="sr-only">Teléfono</label>
                                 <input id="telefono" name="telefono" type="text" placeholder="Teléfono" class="form-control input-md">
                             </div>
-                            <!-- Mensaje -->
+
                             <div class="form-group">
                                 <label for="nombre" class="sr-only">Mensaje</label>
                                 <textarea id="nombre" name="mensaje" placeholder="Mensaje" class="form-control input-md"></textarea>
                                 <br>
                                 <input type="submit" name="" value="Solicitar" class="btn btn-primary btn-lg btn-block">
                             </div>
+                        </form> -->
 
-                        </form>
+                        <!-- INICIO DEL ELOQUA FORM ==================================== -->
+
+
+
+                        <style type="text/css" media="screen">
+                            .elq-form .item-padding {
+                                padding: 6px 5px 9px 9px;
+                            }
+
+                            .elq-form .pp-group {
+                                padding: 0px 5px 0px 9px;
+                            }
+
+                            .elq-form .pp-field {
+                                padding: 6px 0px 9px 0px;
+                            }
+                            /* LABEL */
+
+                            .elq-form .required {
+                                color: red !important;
+                                display: inline;
+                                float: none;
+                                font-weight: bold;
+                                margin: 0pt 0pt 0pt;
+                                padding: 0pt 0pt 0pt;
+                            }
+                            /* FIELD GROUP */
+
+                            .elq-form .field-group {
+                                float: left;
+                                clear: both;
+                            }
+
+                            .elq-form .field-group.large {
+                                width: 100%;
+                            }
+
+                            .elq-form .field-group.medium {
+                                width: 51%;
+                            }
+
+                            .elq-form .field-group.small {
+                                width: 31%;
+                            }
+
+                            .elq-form .field-group .label {
+                                float: left;
+                                width: 97%;
+                                margin-right: 2%;
+                                margin-left: 1%;
+                                padding-bottom: 6px;
+                                font-weight: bold;
+                            }
+
+                            .elq-form .field-group .field-style {
+                                float: left;
+                            }
+
+                            .elq-form .progressive-profile .pp-inner {
+                                float: left;
+                                clear: both;
+                            }
+
+                            .elq-form .progressive-profile .pp-inner.large {
+                                width: 100%;
+                            }
+
+                            .elq-form .progressive-profile .pp-inner.medium {
+                                width: 51%;
+                            }
+
+                            .elq-form .progressive-profile .pp-inner.small {
+                                width: 31%;
+                            }
+                            /* RADIO */
+
+                            .elq-form .radio-option {
+                                display: inline-block;
+                            }
+
+                            .elq-form .radio-option .label {
+                                display: block;
+                                float: left;
+                                padding-right: 10px;
+                                padding-left: 22px;
+                                text-indent: -22px;
+                            }
+
+                            .elq-form .radio-option .input {
+                                vertical-align: middle;
+                                margin-right: 7px;
+                            }
+
+                            .elq-form .radio-option .inner {
+                                vertical-align: middle;
+                            }
+                            /* CHECKBOX */
+
+                            .elq-form .checkbox-span {
+                                display: inline-block;
+                            }
+
+                            .elq-form .checkbox-label {
+                                margin-left: 4px;
+                            }
+                            /* INPUT */
+
+                            .elq-form .accept-default {
+                                width: 100%;
+                            }
+                            /* SIZING */
+
+                            .elq-form .field-style {
+                                margin-right: 2%;
+                                margin-left: 2%;
+                            }
+
+                            .elq-form .field-style._25 {
+                                width: 21%;
+                            }
+
+                            .elq-form .field-style._50 {
+                                width: 46%;
+                            }
+
+                            .elq-form .field-style._50_left {
+                                clear: left;
+                                width: 46%;
+                            }
+
+                            .elq-form .field-style._75 {
+                                width: 71%;
+                            }
+
+                            .elq-form .field-style._100 {
+                                width: 96%;
+                            }
+
+                            .elq-form .field-size-top-small {
+                                width: 30%;
+                            }
+
+                            .elq-form .field-size-top-medium {
+                                width: 75%;
+                            }
+
+                            .elq-form .field-size-top-large {
+                                width: 100%;
+                            }
+
+                            .elq-form .field-size-left-small {
+                                width: 21%;
+                            }
+
+                            .elq-form .field-size-left-medium {
+                                width: 46%;
+                            }
+
+                            .elq-form .field-size-left-large {
+                                width: 60%;
+                            }
+                            /* INSTRUCTIONS */
+
+                            .elq-form .instructions.default {
+                                color: #444444;
+                                display: block;
+                                font-size: 10px;
+                                padding: 6px 0pt 3px;
+                            }
+
+                            .elq-form .instructions.group {
+                                float: left;
+                                width: 97%;
+                                margin-right: 2%;
+                                margin-left: 2%;
+                                padding: 6px 0pt 3px;
+                                color: #444444;
+                                display: block;
+                                font-size: 10px;
+                            }
+
+                            .elq-form .instructions.left-single {
+                                margin: 0 0 0 33%;
+                            }
+
+                            .elq-form .instructions-other {
+                                margin: 0;
+                            }
+                            /* LIST ORDER */
+
+                            .elq-form .list-order {
+                                display: block;
+                            }
+
+                            .elq-form .list-order.oneColumn {
+                                margin: 0pt 7px 0pt 0pt;
+                                width: 100%;
+                                clear: both;
+                            }
+
+                            .elq-form .list-order.twoColumn {
+                                float: left;
+                                margin: 0pt 7px 0pt 0pt;
+                                width: 38%;
+                            }
+
+                            .elq-form .list-order.threeColumn {
+                                float: left;
+                                margin: 0pt 7px 0pt 0pt;
+                                width: 30%;
+                            }
+
+                            .elq-form .list-order.oneColumnLeft {
+                                float: left;
+                                margin: 0pt 7px 0pt 0pt;
+                                width: 100%;
+                            }
+
+                            .elq-form .list-order.twoColumnLeft {
+                                float: left;
+                                margin: 0pt 7px 0pt 0pt;
+                                width: 38%;
+                            }
+
+                            .elq-form .list-order.threeColumnLeft {
+                                float: left;
+                                margin: 0pt 7px 0pt 0pt;
+                                width: 30%;
+                            }
+                            /* GRID STYLE */
+
+                            .elq-form .grid-style {
+                                display: inline;
+                                float: left;
+                                margin-left: 2%;
+                                margin-right: 2%;
+                            }
+
+                            .elq-form .grid-style._25 {
+                                width: 21%;
+                            }
+
+                            .elq-form .grid-style._50 {
+                                width: 46%;
+                            }
+
+                            .elq-form .grid-style._75 {
+                                width: 71%;
+                            }
+
+                            .elq-form .grid-style._100 {
+                                width: 96%;
+                            }
+                        </style>
+                        <div>
+                            <form method="post" name="IctinosForm" action="https://s242003202.t.eloqua.com/e/f2" onsubmit="setTimeout(function(){if(document.querySelector){var s=document.querySelector('form#form-500002 input[type=submit]');if(s){s.disabled=true;}}},100);return true;"
+                                id="form-500002" class="elq-form form">
+                                <legend>Solicitar Cotización</legend>
+                                <input value="IctinosForm" type="hidden" name="elqFormName" />
+                                <input value="242003202" type="hidden" name="elqSiteId" />
+                                <input name="elqCampaignId" type="hidden" />
+                                <div id="formElement0" class="sc-view form-design-field sc-static-layout item-padding sc-regular-size">
+                                    <div class="field-wrapper">
+                                    </div>
+                                    <div class="individual field-wrapper">
+                                        <div class="_100 field-style">
+                                            <p class="field-p">
+                                                <label for="field0" class="label-position top sr-only">
+                                      Nombre
+                                    </label>
+                                                <input id="field0" name="firstName" type="text" value="" class="field-size-top-large input-md form-control" placeholder="Nombre" />
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="formElement1" class="sc-view form-design-field sc-static-layout item-padding sc-regular-size">
+                                    <div class="field-wrapper">
+                                    </div>
+                                    <div class="individual field-wrapper">
+                                        <div class="_100 field-style">
+                                            <p class="field-p">
+                                                <label for="field1" class="label-position top sr-only">
+                                      Email
+                                    </label>
+                                                <input id="field1" name="emailAddress" type="text" value="" class="field-size-top-large input-md form-control" placeholder="Email" />
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="formElement2" class="sc-view form-design-field sc-static-layout item-padding sc-regular-size">
+                                    <div class="field-wrapper">
+                                    </div>
+                                    <div class="individual field-wrapper">
+                                        <div class="_100 field-style">
+                                            <p class="field-p">
+                                                <label for="field2" class="label-position top sr-only">
+                                      Teléfono
+                                    </label>
+                                                <input id="field2" name="mobilePhone" type="text" value="" class="field-size-top-large input-md form-control" placeholder="Teléfono" />
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="formElement3" class="sc-view form-design-field sc-static-layout item-padding sc-regular-size">
+                                    <div class="field-wrapper">
+                                    </div>
+                                    <div class="individual field-wrapper">
+                                        <div class="_100 field-style">
+                                            <p class="field-p">
+                                                <label for="field3" class="label-position top sr-only">
+                                      Mensaje
+                                    </label>
+                                                <input id="field3" name="comments1" type="text" value="" class="field-size-top-large form-control" placeholder="Mensaje" />
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="formElement4" class="sc-view form-design-field sc-static-layout item-padding sc-regular-size">
+                                    <div class="field-wrapper">
+                                    </div>
+                                    <div class="individual field-wrapper">
+                                        <div class="_100 field-style">
+                                            <p class="field-p">
+                                                <input type="submit" value="Solicitar" class="submit-button btn btn-primary btn-block" />
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <script src="https://img04.en25.com/i/livevalidation_standalone.compressed.js" type="text/javascript">
+                            </script>
+                            <style type="text/css" media="screen">
+                                .LV_validation_message {
+                                    font-weight: bold;
+                                    margin: 0 0 0 5px;
+                                }
+
+                                .LV_valid {
+                                    color: #00CC00;
+                                    display: none;
+                                }
+
+                                .LV_invalid {
+                                    color: #CC0000;
+                                    font-size: 10px;
+                                }
+
+                                .LV_valid_field,
+                                input.LV_valid_field:hover,
+                                input.LV_valid_field:active,
+                                textarea.LV_valid_field:hover,
+                                textarea.LV_valid_field:active {
+                                    outline: 1px solid #00CC00;
+                                }
+
+                                .LV_invalid_field,
+                                input.LV_invalid_field:hover,
+                                input.LV_invalid_field:active,
+                                textarea.LV_invalid_field:hover,
+                                textarea.LV_invalid_field:active {
+                                    outline: 1px solid #CC0000;
+                                }
+                            </style>
+                            <script type="text/javascript">
+                                var dom0 = document.querySelector('#form-500002 #field0');
+                                var field0 = new LiveValidation(dom0, {
+                                    validMessage: "",
+                                    onlyOnBlur: false,
+                                    wait: 300
+                                });
+                                field0.add(Validate.Custom, {
+                                    against: function(value) {
+                                        return !value.match(/(\S:\/\/\S|\D\.\D|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|\d\.\D)/);
+                                    },
+                                    failureMessage: "Value must not contain any URL's"
+                                });
+                                var dom1 = document.querySelector('#form-500002 #field1');
+                                var field1 = new LiveValidation(dom1, {
+                                    validMessage: "",
+                                    onlyOnBlur: false,
+                                    wait: 300
+                                });
+                                var dom2 = document.querySelector('#form-500002 #field2');
+                                var field2 = new LiveValidation(dom2, {
+                                    validMessage: "",
+                                    onlyOnBlur: false,
+                                    wait: 300
+                                });
+                                field2.add(Validate.Custom, {
+                                    against: function(value) {
+                                        return !value.match(/(\S:\/\/\S|\D\.\D|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|\d\.\D)/);
+                                    },
+                                    failureMessage: "Value must not contain any URL's"
+                                });
+                                var dom3 = document.querySelector('#form-500002 #field3');
+                                var field3 = new LiveValidation(dom3, {
+                                    validMessage: "",
+                                    onlyOnBlur: false,
+                                    wait: 300
+                                });
+                                field3.add(Validate.Custom, {
+                                    against: function(value) {
+                                        return !value.match(/(\S:\/\/\S|\D\.\D|\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}|\d\.\D)/);
+                                    },
+                                    failureMessage: "Value must not contain any URL's"
+                                });
+
+                                function resetSubmitButton(e) {
+                                    var submitButtons = e.target.form.getElementsByClassName('submit-button');
+                                    for (var i = 0; i < submitButtons.length; i++) {
+                                        submitButtons[i].disabled = false;
+                                    }
+                                }
+
+                                function addChangeHandler(elements) {
+                                    for (var i = 0; i < elements.length; i++) {
+                                        elements[i].addEventListener('change', resetSubmitButton);
+                                    }
+                                }
+                                var form = document.getElementById('form-500002');
+                                addChangeHandler(form.getElementsByTagName('input'));
+                                addChangeHandler(form.getElementsByTagName('select'));
+                                addChangeHandler(form.getElementsByTagName('textarea'));
+                                var nodes = document.querySelectorAll('#form-500002 input[data-subscription]');
+                                if (nodes) {
+                                    for (i = 0, len = nodes.length; i < len; i++) {
+                                        var status = nodes[i].dataset ? nodes[i].dataset.subscription : nodes[i].getAttribute('data-subscription');
+                                        if (status === 'true') {
+                                            nodes[i].checked = true;
+                                        }
+                                    }
+                                };
+                            </script>
+                        </div>
+
+
+
+
+                        <!-- FIN DEL ELOQUA FORM ==================================== -->
                     </div>
                 </div>
             </div>
 
+
+
+
+
+
             <div class="owl-carousel owl-theme">
                 <div class="item">
-                    <img src="http://placehold.it/1920x660" alt="Image" class="img-responsive">
+                    <img src="./images/ictinos-slider-edificio.jpg" alt="Image" class="img-responsive">
                 </div>
                 <div class="item">
-                    <img src="http://placehold.it/1920x660" alt="Image" class="img-responsive">
+                    <img src="./images/ictinos-slider-living.jpg" alt="Image" class="img-responsive">
                 </div>
                 <div class="item">
-                    <img src="http://placehold.it/1920x660" alt="Image" class="img-responsive">
+                    <img src="./images/ictinos-slider-comedor.jpg" alt="Image" class="img-responsive">
+                </div>
+                <div class="item">
+                    <img src="./images/ictinos-slider-cocina.jpg" alt="Image" class="img-responsive">
                 </div>
 
             </div>
@@ -110,6 +561,40 @@
         <!-- Features Section -->
         <section id="section-features" class="section section--padding">
             <div class="container">
+                <div class="row" id="feature-0">
+
+                    <div class="col-xs-12">
+                        <h2>Edificio <small>Varas Gallardo</small></h2>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul>
+                                    <li>12 pisos</li>
+                                    <li>61 departamentos</li>
+                                    <li>2 ascensores</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul>
+                                    <li>Estacionamiento de visita</li>
+                                    <li>Departamentos de 2 y 3 dormitorios</li>
+                                    <li> Sistema Sticker Tag (Acceso vehicular)</li>
+                                </ul>
+
+                                <ul>
+                                    <li>Piscina</li>
+                                    <li>Sala de usos múltiples</li>
+                                    <li>15 bicicletas urbanas compartidas</li>
+                                    <li>Estacionamiento bicicletas (propietarios y visitas)</li>
+                                    <li>Juegos infantiles</li>
+                                    <li>Áreas Verdes</li>
+                                    <li>Iluminación LED</li>
+                                    <li>Circuito Cerrado de TV</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
                 <div class="row" id="feature-1">
                     <div class="col-xs-12 col-sm-6">
                         <img src="http://placehold.it/560x360" alt="Image" class="img-responsive">
@@ -133,68 +618,456 @@
 
 
         <!-- Section Tipos -->
-        <section id="section-tipos" class="section section--padding">
+        <section id="section-tipos" class="section section--padding section-tipos">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
                         <div class="container" id="tabs">
                             <ul class="nav nav-pills">
-                                <li role="presentation" class="active"><a href="#1a" data-toggle="tab">Tipo A</a></li>
-                                <li role="presentation"><a href="#2a" data-toggle="tab">Tipo B</a></li>
-                                <li role="presentation"><a href="#3a" data-toggle="tab">Tipo C</a></li>
-                                <li role="presentation"><a href="#4a" data-toggle="tab">Tipo D</a></li>
+                                <li role="presentation" class="dropdown active">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">TIPO A <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#tipoa" data-toggle="tab">TIPO A</a></li>
+                                        <li><a href="#tipoa1" data-toggle="tab">TIPO A1</a></li>
+                                        <li><a href="#tipoa2" data-toggle="tab">TIPO A2</a></li>
+                                        <li><a href="#tipoa3" data-toggle="tab">TIPO A3</a></li>
+                                    </ul>
+                                </li>
+
+                                <li role="presentation" class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">TIPO B <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#tipob" data-toggle="tab">TIPO B</a></li>
+                                        <li><a href="#tipob1" data-toggle="tab">TIPO B1</a></li>
+                                        <li><a href="#tipob2" data-toggle="tab">TIPO B2</a></li>
+                                        <li><a href="#tipob3" data-toggle="tab">TIPO B3</a></li>
+                                    </ul>
+                                </li>
+
+                                <li role="presentation" class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">TIPO C <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#tipoc" data-toggle="tab">TIPO C</a></li>
+                                        <li><a href="#tipoc1" data-toggle="tab">TIPO C1</a></li>
+                                        <li><a href="#tipoc2" data-toggle="tab">TIPO C2</a></li>
+                                        <li><a href="#tipoc3" data-toggle="tab">TIPO C3</a></li>
+                                    </ul>
+                                </li>
+
+
                             </ul>
+
                             <div class="tab-content clearfix">
-                                <div class="tab-pane active" id="1a">
+                                <!-- Tipo A -->
+                                <div class="tab-pane active" id="tipoa">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-6">
-                                            <img src="http://placehold.it/555x370" alt="Image" class="img-responsive">
+                                            <img src="./images/ictinos-Tipo-A.jpg" alt="Image" class="img-responsive">
                                         </div>
                                         <div class="col-xs-12 col-sm-6">
                                             <h3>Tipo A</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, distinctio debitis cupiditate dolor, reprehenderit architecto eos neque vero consectetur excepturi, veritatis obcaecati veniam vitae assumenda rem
-                                                soluta, dicta velit laboriosam?</p>
+                                            <h4>ORIENTACIÓN NOR PONIENTE</h4>
+                                            <ul class="list-unstyled">
+                                                <li>2 Dormitorios</li>
+                                                <li>2 Baños</li>
+                                            </ul>
+                                            <table class="table">
+                                                <tr>
+                                                    <td>Superficie Interior</td>
+                                                    <td>77,92 aprox.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Superficie Logia </td>
+                                                    <td>3,22 aprox.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Terraza</td>
+                                                    <td>14,63 aprox.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Superficie Total </td>
+                                                    <td>95, 77 aprox.</td>
+                                                </tr>
+                                            </table>
                                         </div>
                                     </div>
+                                </div>
 
-                                </div>
-                                <div class="tab-pane" id="2a">
+                                <!-- Tipo A1 -->
+                                <div class="tab-pane" id="tipoa1">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-6">
-                                            <img src="http://placehold.it/555x370" alt="Image" class="img-responsive">
+                                            <img src="./images/ictinos-Tipo-A1.jpg" alt="Image" class="img-responsive">
                                         </div>
                                         <div class="col-xs-12 col-sm-6">
-                                            <h3>Tipo B</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, distinctio debitis cupiditate dolor, reprehenderit architecto eos neque vero consectetur excepturi, veritatis obcaecati veniam vitae assumenda rem
-                                                soluta, dicta velit laboriosam?</p>
+                                            <h3>TIPO A1</h3>
+                                            <h4>ORIENTACIÓN SUR PONIENTE</h4>
+                                            <ul class="list-unstyled">
+                                                <li>2 Dormitorios</li>
+                                                <li>2 Baños</li>
+                                            </ul>
+                                            <table class="table">
+                                                <tr>
+                                                    <td>Superficie Interior</td>
+                                                    <td>77,56 aprox.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Superficie Logia </td>
+                                                    <td>3,22 aprox.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Terraza</td>
+                                                    <td>18,09 aprox.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Superficie Total </td>
+                                                    <td>98,87 aprox.</td>
+                                                </tr>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane" id="3a">
+
+
+                                <!-- Tipo A2 -->
+                                <div class="tab-pane" id="tipoa2">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-6">
-                                            <img src="http://placehold.it/555x370" alt="Image" class="img-responsive">
+                                            <img src="./images/ictinos-Tipo-A2.jpg" alt="Image" class="img-responsive">
                                         </div>
                                         <div class="col-xs-12 col-sm-6">
-                                            <h3>Tipo C</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, distinctio debitis cupiditate dolor, reprehenderit architecto eos neque vero consectetur excepturi, veritatis obcaecati veniam vitae assumenda rem
-                                                soluta, dicta velit laboriosam?</p>
+                                            <h3>TIPO A2</h3>
+                                            <h4>ORIENTACIÓN NOR PONIENTE</h4>
+                                            <ul class="list-unstyled">
+                                                <li>2 Dormitorios</li>
+                                                <li>2 Baños</li>
+                                            </ul>
+                                            <table class="table">
+                                                <tr>
+                                                    <td>Superficie Interior</td>
+                                                    <td>74,39 aprox.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Superficie Logia </td>
+                                                    <td>3,22 aprox.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Terraza</td>
+                                                    <td>18,16 aprox.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Superficie Total </td>
+                                                    <td>95, 77 aprox.</td>
+                                                </tr>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="tab-pane" id="4a">
+
+
+                                <!-- Tipo A3 -->
+                                <div class="tab-pane" id="tipoa3">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-6">
-                                            <img src="http://placehold.it/555x370" alt="Image" class="img-responsive">
+                                            <img src="./images/ictinos-Tipo-A3.jpg" alt="Image" class="img-responsive">
                                         </div>
                                         <div class="col-xs-12 col-sm-6">
-                                            <h3>Tipo D</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, distinctio debitis cupiditate dolor, reprehenderit architecto eos neque vero consectetur excepturi, veritatis obcaecati veniam vitae assumenda rem
-                                                soluta, dicta velit laboriosam?</p>
+                                            <h3>TIPO A3</h3>
+                                            <h4>ORIENTACIÓN SUR PONIENTE</h4>
+                                            <ul class="list-unstyled">
+                                                <li>2 Dormitorios</li>
+                                                <li>2 Baños</li>
+                                            </ul>
+                                            <table class="table">
+                                                <tr>
+                                                    <td>Superficie Interior</td>
+                                                    <td>71,26 aprox.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Superficie Logia </td>
+                                                    <td>3,22 aprox.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Terraza</td>
+                                                    <td>18,54 aprox.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Superficie Total </td>
+                                                    <td>93,02 aprox.</td>
+                                                </tr>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+
+
+                                <!-- Tipo B -->
+                                <div class="tab-pane" id="tipob">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6">
+                                            <img src="./images/ictinos-Tipo-B.jpg" alt="Image" class="img-responsive">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6">
+                                            <h3>TIPO B</h3>
+                                            <h4>ORIENTACIÓN NORTE</h4>
+                                            <ul class="list-unstyled">
+                                                <li>2 Dormitorios</li>
+                                                <li>2 Baños</li>
+                                            </ul>
+                                            <table class="table">
+                                                <tr>
+                                                    <td>Superficie Interior</td>
+                                                    <td>60,19 aprox.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Terraza</td>
+                                                    <td>14,04 aprox.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Superficie Total </td>
+                                                    <td>74,23 aprox.</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tipo B1 -->
+                                <div class="tab-pane" id="tipob1">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6">
+                                            <img src="./images/ictinos-Tipo-B1.jpg" alt="Image" class="img-responsive">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6">
+                                            <h3>TIPO B1</h3>
+                                            <h4>ORIENTACIÓN NORTE</h4>
+                                            <ul class="list-unstyled">
+                                                <li>2 Dormitorios</li>
+                                                <li>2 Baños</li>
+                                            </ul>
+                                            <table class="table">
+                                                <tr>
+                                                    <td>Superficie Interior</td>
+                                                    <td>60,51 aprox.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Terraza</td>
+                                                    <td>14,04 aprox.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Superficie Total </td>
+                                                    <td>74,55 aprox.</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tipo B2 -->
+                                <div class="tab-pane" id="tipob2">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6">
+                                            <img src="./images/ictinos-Tipo-B2.jpg" alt="Image" class="img-responsive">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6">
+                                            <h3>TIPO B2</h3>
+                                            <h4>ORIENTACIÓN SUR</h4>
+                                            <ul class="list-unstyled">
+                                                <li>2 Dormitorios</li>
+                                                <li>2 Baños</li>
+                                            </ul>
+                                            <table class="table">
+                                                <tr>
+                                                    <td>Superficie Interior</td>
+                                                    <td>60,55 aprox.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Terraza</td>
+                                                    <td>14,04 aprox.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Superficie Total </td>
+                                                    <td>74,59 aprox.</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tipo B3 -->
+                                <div class="tab-pane" id="tipob3">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6">
+                                            <img src="./images/ictinos-Tipo-B3.jpg" alt="Image" class="img-responsive">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6">
+                                            <h3>TIPO B3</h3>
+                                            <h4>ORIENTACIÓN SUR</h4>
+                                            <ul class="list-unstyled">
+                                                <li>2 Dormitorios</li>
+                                                <li>2 Baños</li>
+                                            </ul>
+                                            <table class="table">
+                                                <tr>
+                                                    <td>Superficie Interior</td>
+                                                    <td>55,65 aprox.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Terraza</td>
+                                                    <td>14,02 aprox.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Superficie Total </td>
+                                                    <td>70,07 aprox.</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- Tipo C -->
+                                <div class="tab-pane" id="tipoc">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6">
+                                            <img src="./images/ictinos-Tipo-C.jpg" alt="Image" class="img-responsive">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6">
+                                            <h3>TIPO C</h3>
+                                            <h4>ORIENTACIÓN NOR ORIENTE</h4>
+                                            <ul class="list-unstyled">
+                                                <li>3 Dormitorios</li>
+                                                <li>3 Baños</li>
+                                            </ul>
+                                            <table class="table">
+                                                <tr>
+                                                    <td>Superficie Interior</td>
+                                                    <td>93,95 aprox.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Superficie Logia</td>
+                                                    <td>3,22 aprox.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Terraza</td>
+                                                    <td>20,45 aprox.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Superficie Total </td>
+                                                    <td>117,76 aprox.</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tipo C1 -->
+                                <div class="tab-pane" id="tipoc1">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6">
+                                            <img src="./images/ictinos-Tipo-C1.jpg" alt="Image" class="img-responsive">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6">
+                                            <h3>TIPO C1</h3>
+                                            <h4>ORIENTACIÓN NOR ORIENTE</h4>
+                                            <ul class="list-unstyled">
+                                                <li>3 Dormitorios</li>
+                                                <li>3 Baños</li>
+                                            </ul>
+                                            <table class="table">
+                                                <tr>
+                                                    <td>Superficie Interior</td>
+                                                    <td>93,92 aprox.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Superficie Logia</td>
+                                                    <td>3,39 aprox.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Terraza</td>
+                                                    <td>20,45 aprox.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Superficie Total </td>
+                                                    <td>117,76 aprox.</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tipo C2 -->
+                                <div class="tab-pane" id="tipoc2">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6">
+                                            <img src="./images/ictinos-Tipo-C2.jpg" alt="Image" class="img-responsive">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6">
+                                            <h3>TIPO C2</h3>
+                                            <h4>ORIENTACIÓN SUR ORIENTE</h4>
+                                            <ul class="list-unstyled">
+                                                <li>3 Dormitorios</li>
+                                                <li>3 Baños</li>
+                                            </ul>
+                                            <table class="table">
+                                                <tr>
+                                                    <td>Superficie Interior</td>
+                                                    <td>93,95 aprox.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Superficie Logia</td>
+                                                    <td>3,22 aprox.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Terraza</td>
+                                                    <td>20,45 aprox.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Superficie Total </td>
+                                                    <td>117,62 aprox.</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Tipo C3 -->
+                                <div class="tab-pane" id="tipoc3">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6">
+                                            <img src="./images/ictinos-Tipo-C3.jpg" alt="Image" class="img-responsive">
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6">
+                                            <h3>TIPO C3</h3>
+                                            <h4>ORIENTACIÓN SUR ORIENTE</h4>
+                                            <ul class="list-unstyled">
+                                                <li>3 Dormitorios</li>
+                                                <li>3 Baños</li>
+                                            </ul>
+                                            <table class="table">
+                                                <tr>
+                                                    <td>Superficie Interior</td>
+                                                    <td>89,05 aprox.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Superficie Logia</td>
+                                                    <td>3,22 aprox.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Terraza</td>
+                                                    <td>20,83 aprox.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Superficie Total </td>
+                                                    <td>113,10 aprox.</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div><!-- Fin de los tabs -->
                         </div>
                     </div>
                 </div>
@@ -206,9 +1079,9 @@
         <section id="section-action" class="section section--padding">
             <div class="container">
                 <div class="text-center">
-                    <h1>Marketing stuff!</h1>
-                    <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.</p>
-                    <p><a class="btn btn-lg btn-success" href="#" role="button">Get started today</a></p>
+                    <h1>Call to action</h1>
+                    <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+                    <p><a class="btn btn-lg btn-secondary" href="#" role="button">Get started today</a></p>
                 </div>
             </div>
         </section>
@@ -236,11 +1109,11 @@
             // Create a map object and specify the DOM element for display.
             var map = new google.maps.Map(document.getElementById('map'), {
                 center: {
-                    lat: -34.397,
-                    lng: 150.644
+                    lat: -33.431268,
+                    lng: -70.616299
                 },
                 scrollwheel: false,
-                zoom: 8
+                zoom: 16
             });
         }
     </script>

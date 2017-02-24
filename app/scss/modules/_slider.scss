@@ -1,4 +1,28 @@
 .slider {
+
+    .mobilehand {
+      // border: 3px dashed greenyellow;
+      bottom: 0;
+      left: 0;
+      position: absolute;
+      transform-origin: left bottom;
+      z-index: 9;
+
+      @include xxs-device {
+        display: none;
+        transform: scale(.4);
+      }
+      @include md-device {
+        display: block;
+        transform: scale(.6);
+      }
+
+      @include lg-device {
+        display: block;
+        transform: scale(.9);
+      }
+    }
+
     .owl-dots {
         left: 50%;
         margin-top: -30px !important;
@@ -6,9 +30,51 @@
         transform: translateX(-50%);
     }
 
+    .item {
+      max-height: 66rem;
+      position: relative;
+
+      @include xxs-device {
+        // height: 23rem;
+      }
+
+      @include sm-device {
+        // height: 66rem;
+      }
+
+      @include md-device {
+         min-height: 66rem;
+        img {
+          left: 50%;
+          position: absolute;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+
+    .title {
+      color: $naranja;
+      font-weight: bold;
+      text-shadow: .1rem .1rem .3rem rgba($negro, .5);
+      text-transform: uppercase;
+
+      @include xxs-device {
+
+      }
+    }
+
+    .lead {
+      background-color: rgba($dark-blue, .95);
+      color: #fff;
+      padding: .5rem;
+      text-shadow: .1rem .1rem .3rem rgba($negro, .5);
+      text-transform: uppercase;
+    }
+
     @include xxs-device {
       .owl-stage {
-        min-height: 30rem;
+        min-height: 23rem;
       }
 
       h2 {
@@ -16,19 +82,18 @@
       }
 
       .lead {
-        text-align: justify;
+        text-align: center;
       }
     }
 
-    @include sm-device {
+    @include md-device {
       h2 {
-        text-align: inherit;;
+        text-align: inherit;
       }
 
       .lead {
         text-align: inherit;
       }
     }
-
 
 }
