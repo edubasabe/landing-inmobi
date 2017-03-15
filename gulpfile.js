@@ -43,6 +43,12 @@ gulp.task('watch', ['browserSync','sass'], function (){
   gulp.watch('app/js/**/*.js', browserSync.reload);
 });
 
+//-- Copy css
+gulp.task('copycss', function () {
+  return gulp.src('app/css/main.css')
+    pipe(gulp.dest('dist/css'))
+});
+
 //-- Useref
 gulp.task('useref', function(){
   return gulp.src('app/*.html')
@@ -76,7 +82,7 @@ gulp.task('clean:dist', function() {
 //-- Run Sequence
 gulp.task('build', function (callback) {
   runSequence('clean:dist',
-    ['sass', 'useref', 'images', 'fonts'],
+    ['sass', 'useref', 'copycss', 'images', 'fonts'],
     callback
   );
 });

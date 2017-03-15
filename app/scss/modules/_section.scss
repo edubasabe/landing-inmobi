@@ -50,6 +50,74 @@
         }
     }
 }
+
+.section-features {
+  &__title {
+    color: $dark-blue;
+
+    @include xxs-device {
+      margin-top: 0;
+    }
+
+    small {
+      color: $naranja;
+      text-transform: uppercase;
+    }
+  }
+
+  &__list {
+    li {
+      @include xxs-device {
+        line-height: 2;
+      }
+
+      i {
+        color: $naranja;
+        margin-top: .3rem;
+        position: absolute;
+      }
+
+      span {
+        font-size: 2.2rem;
+        margin-left: 3rem;
+
+        @include xxs-device {
+          font-size: 1.6rem;
+        }
+
+        @include sm-device {
+          font-size: 2.2rem;
+        }
+      }
+    }
+  }
+
+  &__list-a {
+    li {
+      line-height: 4rem;
+
+      i {
+        color: $naranja;
+        margin-top: .3rem;
+        position: absolute;
+      }
+
+      span {
+        font-size: 2.2rem;
+        margin-left: 3rem;
+
+        @include xxs-device {
+          font-size: 1.6rem;
+        }
+
+        @include sm-device {
+          font-size: 2.2rem;
+        }
+      }
+    }
+  }
+}
+
 //-----
 // Section Tipos
 //-----
@@ -100,6 +168,7 @@
     }
 
     .nav-pills {
+
         & > li.active {
             & > a {
                 background-color: $dark-blue;
@@ -142,6 +211,59 @@
         }
     }
 }
+
+.section-tipos {
+  &__title {
+    color: #fff;
+  }
+}
+
+
+
+//-----
+// Section Fibaro
+//-----
+.section-fibaro {
+  &__title {
+    text-transform: uppercase;
+  }
+
+  &__naranja {
+    color: $naranja;
+  }
+
+  h4 {
+
+    @include xxs-device {
+      text-align: center;
+    }
+  }
+
+  p {
+    @include xxs-device {
+      text-align: center;
+    }
+  }
+}
+
+.section-action {
+  background-color: $dark-blue;
+
+  &__title {
+    color: #fff;
+  }
+}
+
+//----
+// Section Map
+//----
+.section-map {
+  &__title {
+    color: $naranja;
+  }
+}
+
+
 //----
 // Otros
 //----

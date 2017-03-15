@@ -1,6 +1,6 @@
 .navbar {
     padding: 0;
-    
+
     &-brand {
         height: auto;
     }
@@ -13,7 +13,21 @@
     &-default {
         .navbar-nav {
             a {
-                border-radius: 3rem;
+                border-radius: .3rem;
+            }
+
+            .active {
+              a {
+                background-color: rgba($naranja, .8);
+
+                &:hover {
+                  background-color: rgba($naranja, .8);
+                }
+
+                &:focus {
+                  background-color: rgba($naranja, .8);
+                }
+              }
             }
         }
     }

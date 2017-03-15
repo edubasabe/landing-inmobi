@@ -1,5 +1,17 @@
 .slider {
 
+    .varaslogo {
+      @include xxs-device {
+        margin: 0 auto;
+        text-align: center;
+        transform: scale(.5);
+      }
+
+      @include sm-device {
+        transform: none;
+      }
+    }
+
     .mobilehand {
       // border: 3px dashed greenyellow;
       bottom: 0;
@@ -23,11 +35,60 @@
       }
     }
 
+
+
     .owl-dots {
         left: 50%;
         margin-top: -30px !important;
         position: absolute;
         transform: translateX(-50%);
+
+        .owl-dot.active {
+          span {
+            background-color: $naranja;
+          }
+        }
+
+        .owl-dot {
+          span {
+            background-color: rgba($dark-blue, .8);
+          }
+
+          &:hover {
+            span {
+              background-color: rgba($naranja, .7);
+            }
+          }
+        }
+
+
+    }
+
+    .owl-theme {
+      .owl-nav {
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        z-index: 99;
+
+        @include xxs-device {
+          margin-top: 0;
+        }
+
+        .owl-prev {
+          left: 0;
+          position: absolute;
+          top: 0;
+        }
+
+        .owl-next {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+      }
     }
 
     .item {
@@ -44,6 +105,7 @@
 
       @include md-device {
          min-height: 66rem;
+
         img {
           left: 50%;
           position: absolute;
@@ -60,7 +122,15 @@
       text-transform: uppercase;
 
       @include xxs-device {
+        font-size: 3.2rem;
+        margin-top: -2rem;
+        text-align: center;
+      }
 
+      @include sm-device {
+        font-size: 4.2rem;
+        margin-bottom: 0;
+        margin-top: 0;
       }
     }
 
@@ -70,6 +140,16 @@
       padding: .5rem;
       text-shadow: .1rem .1rem .3rem rgba($negro, .5);
       text-transform: uppercase;
+
+      @include xxs-device {
+        font-size: 1rem;
+      }
+
+      @include sm-device {
+        font-size: 2rem;
+        margin: 0 auto;
+        text-align: center;
+      }
     }
 
     @include xxs-device {
@@ -92,7 +172,7 @@
       }
 
       .lead {
-        text-align: inherit;
+        text-align: center;
       }
     }
 
