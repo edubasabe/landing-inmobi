@@ -5,7 +5,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Varas Gallardo</title>
+    <title>Boulevard del Mar</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
     <!-- build:css css/master.min.css -->
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="./css/font-awesome.min.css" />
@@ -16,13 +22,14 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" ng-app="myApp">
     <main class="main">
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -34,7 +41,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                    <a class="navbar-brand page-scroll" href="#page-top"><img src="https://img04.en25.com/EloquaImages/clients/TAMEDSpA/%7Bb5de6f01-3d7e-4933-89d5-67caf810f218%7D_ictinos%401x.png" srcset="https://img04.en25.com/EloquaImages/clients/TAMEDSpA/%7Ba4b6da73-48f9-4b1b-93d2-a135c2a07090%7D_ictinos%402x.png 2x, https://img04.en25.com/EloquaImages/clients/TAMEDSpA/%7B0c0d1759-ac2c-4ed6-80d8-eed4045fa223%7D_ictinos%403x.png 3x" alt="Ictinos Logo"><span class="sr-only">Ictinos Inmobiliaria</span></a>
+                    <a class="navbar-brand page-scroll" href="#page-top"><img src="./images/loga@1x.png" srcset="./images/loga@2x.png 2x, ./images/loga@3x.png 3x" alt="Loga"><span class="sr-only">Loga</span></a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -61,7 +68,7 @@
             <div class="container container-flotante">
                 <div class="row">
                     <div class="col-xs-12 col-sm-6">
-                        <img src="https://tuhogarinteligente.cl/inmobi/varas-gallardo/images/varas-gallardo-logo-xs.png" alt="Varas Gallardo" class="img-responsive varaslogo">
+                        <img src="https://tuhogarinteligente.cl/inmobi/varas-gallardo/images/varas-gallardo-logo-xs.png" alt="Boulevard del Mar" class="img-responsive varaslogo">
                         <h2 class="title">Tu vida crece</h2>
                         <p class="lead">en el corazón de providencia con tu hogar inteligente</p>
                     </div>
@@ -176,7 +183,7 @@
                                                 <label for="field3" class="label-position top sr-only">
                                       Mensaje
                                     </label>
-                                                <input id="field3" name="comments1" type="text" value="" class="field-size-top-large form-control" placeholder="Mensaje" />
+                                                <textarea id="field3" name="comments1" type="text" value="" class="field-size-top-large form-control" placeholder="Mensaje"></textarea>
                                             </p>
                                         </div>
                                     </div>
@@ -335,7 +342,7 @@
                 <div class="row" id="feature-0">
 
                     <div class="col-xs-12">
-                        <h2 class="section-features__title"><small>Edificio <br></small>Varas Gallardo</h2>
+                        <h2 class="section-features__title"><small>Edificio <br></small>Boulevard del Mar</h2>
                         <div class="row">
                             <div class="col-sm-6">
                                 <ul class="list-unstyled section-features__list-a">
@@ -383,9 +390,7 @@
                                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">TIPO A <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
                                         <li><a href="#tipoa" data-toggle="tab">TIPO A</a></li>
-                                        <li><a href="#tipoa1" data-toggle="tab">TIPO A1</a></li>
-                                        <li><a href="#tipoa2" data-toggle="tab">TIPO A2</a></li>
-                                        <li><a href="#tipoa3" data-toggle="tab">TIPO A3</a></li>
+                                        <li><a href="#tipoaa" data-toggle="tab">TIPO AA</a></li>
                                     </ul>
                                 </li>
 
@@ -393,9 +398,8 @@
                                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">TIPO B <span class="caret"></span></a>
                                     <ul class="dropdown-menu">
                                         <li><a href="#tipob" data-toggle="tab">TIPO B</a></li>
-                                        <li><a href="#tipob1" data-toggle="tab">TIPO B1</a></li>
-                                        <li><a href="#tipob2" data-toggle="tab">TIPO B2</a></li>
-                                        <li><a href="#tipob3" data-toggle="tab">TIPO B3</a></li>
+                                        <li><a href="#tipobb" data-toggle="tab">TIPO BB</a></li>
+
                                     </ul>
                                 </li>
 
@@ -404,417 +408,62 @@
                                     <ul class="dropdown-menu">
                                         <li><a href="#tipoc" data-toggle="tab">TIPO C</a></li>
                                         <li><a href="#tipoc1" data-toggle="tab">TIPO C1</a></li>
-                                        <li><a href="#tipoc2" data-toggle="tab">TIPO C2</a></li>
-                                        <li><a href="#tipoc3" data-toggle="tab">TIPO C3</a></li>
+                                        <li><a href="#tipocc" data-toggle="tab">TIPO CC</a></li>
+                                    </ul>
+                                </li>
+
+                                <li role="presentation" class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">TIPO D <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#tipod" data-toggle="tab">TIPO D</a></li>
+                                        <li><a href="#tipodd" data-toggle="tab">TIPO DD</a></li>
+                                    </ul>
+                                </li>
+
+                                <li role="presentation" class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">TIPO E <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#tipoe" data-toggle="tab">TIPO E</a></li>
+                                        <li><a href="#tipoee" data-toggle="tab">TIPO EE</a></li>
                                     </ul>
                                 </li>
 
 
                             </ul>
 
-                            <div class="tab-content clearfix">
-                                <!-- Tipo A -->
-                                <div class="tab-pane active" id="tipoa">
+                            <div class="tab-content clearfix" ng-controller="myCtrl">
+
+
+
+                                <!-- Angular -->
+
+
+                                <div class="tab-pane {{x.clase}}" id="{{x.tipoid}}" ng-repeat="x in records">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-6">
-                                            <img src="https://img04.en25.com/EloquaImages/clients/TAMEDSpA/%7B7a0a7f5a-ed63-4406-93fe-53788ca806b9%7D_ictinos-Tipo-A.jpg" alt="Image" class="img-responsive">
+                                            <img src="{{x.imageUrl}}" alt="Image" class="img-responsive">
                                         </div>
                                         <div class="col-xs-12 col-sm-6">
-                                            <h3>Tipo A</h3>
-                                            <h4>ORIENTACIÓN NOR PONIENTE</h4>
-                                            <ul class="list-unstyled">
-                                                <li>2 Dormitorios</li>
-                                                <li>2 Baños</li>
-                                            </ul>
+                                            <h3>{{x.tipoTitle}}</h3>
+                                            <h4>{{x.orientacion}}</h4>
+                                            <h5>{{x.capacidad}}</h5>
+
                                             <table class="table">
                                                 <tr>
-                                                    <td>Superficie Interior</td>
-                                                    <td>77,92 aprox.</td>
+                                                    <td>Superficie útil:</td>
+                                                    <td>{{x.superficieUtil}}</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Superficie Logia </td>
-                                                    <td>3,22 aprox.</td>
+                                                    <td>Superficie terraza:</td>
+                                                    <td>{{x.superficieTerraza}}</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Terraza</td>
-                                                    <td>14,63 aprox.</td>
+                                                    <td>Superficie total:</td>
+                                                    <td>{{x.superficieTotal}}</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>Superficie Total </td>
-                                                    <td>95, 77 aprox.</td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Tipo A1 -->
-                                <div class="tab-pane" id="tipoa1">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-6">
-                                            <img src="https://img04.en25.com/EloquaImages/clients/TAMEDSpA/%7Bef9cb9d7-6f71-42db-8048-58f6d0044951%7D_ictinos-Tipo-A1.jpg" alt="Image" class="img-responsive">
-                                        </div>
-                                        <div class="col-xs-12 col-sm-6">
-                                            <h3>TIPO A1</h3>
-                                            <h4>ORIENTACIÓN SUR PONIENTE</h4>
-                                            <ul class="list-unstyled">
-                                                <li>2 Dormitorios</li>
-                                                <li>2 Baños</li>
-                                            </ul>
-                                            <table class="table">
-                                                <tr>
-                                                    <td>Superficie Interior</td>
-                                                    <td>77,56 aprox.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Superficie Logia </td>
-                                                    <td>3,22 aprox.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Terraza</td>
-                                                    <td>18,09 aprox.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Superficie Total </td>
-                                                    <td>98,87 aprox.</td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <!-- Tipo A2 -->
-                                <div class="tab-pane" id="tipoa2">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-6">
-                                            <img src="https://tuhogarinteligente.cl/inmobi/varas-gallardo/images/ictinos-Tipo-A2.jpg" alt="Image" class="img-responsive">
-                                        </div>
-                                        <div class="col-xs-12 col-sm-6">
-                                            <h3>TIPO A2</h3>
-                                            <h4>ORIENTACIÓN NOR PONIENTE</h4>
-                                            <ul class="list-unstyled">
-                                                <li>2 Dormitorios</li>
-                                                <li>2 Baños</li>
-                                            </ul>
-                                            <table class="table">
-                                                <tr>
-                                                    <td>Superficie Interior</td>
-                                                    <td>74,39 aprox.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Superficie Logia </td>
-                                                    <td>3,22 aprox.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Terraza</td>
-                                                    <td>18,16 aprox.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Superficie Total </td>
-                                                    <td>95, 77 aprox.</td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <!-- Tipo A3 -->
-                                <div class="tab-pane" id="tipoa3">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-6">
-                                            <img src="https://tuhogarinteligente.cl/inmobi/varas-gallardo/images/ictinos-Tipo-A3.jpg" alt="Image" class="img-responsive">
-                                        </div>
-                                        <div class="col-xs-12 col-sm-6">
-                                            <h3>TIPO A3</h3>
-                                            <h4>ORIENTACIÓN SUR PONIENTE</h4>
-                                            <ul class="list-unstyled">
-                                                <li>2 Dormitorios</li>
-                                                <li>2 Baños</li>
-                                            </ul>
-                                            <table class="table">
-                                                <tr>
-                                                    <td>Superficie Interior</td>
-                                                    <td>71,26 aprox.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Superficie Logia </td>
-                                                    <td>3,22 aprox.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Terraza</td>
-                                                    <td>18,54 aprox.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Superficie Total </td>
-                                                    <td>93,02 aprox.</td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <!-- Tipo B -->
-                                <div class="tab-pane" id="tipob">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-6">
-                                            <img src="https://tuhogarinteligente.cl/inmobi/varas-gallardo/images/ictinos-Tipo-B.jpg" alt="Image" class="img-responsive">
-                                        </div>
-                                        <div class="col-xs-12 col-sm-6">
-                                            <h3>TIPO B</h3>
-                                            <h4>ORIENTACIÓN NORTE</h4>
-                                            <ul class="list-unstyled">
-                                                <li>2 Dormitorios</li>
-                                                <li>2 Baños</li>
-                                            </ul>
-                                            <table class="table">
-                                                <tr>
-                                                    <td>Superficie Interior</td>
-                                                    <td>60,19 aprox.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Terraza</td>
-                                                    <td>14,04 aprox.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Superficie Total </td>
-                                                    <td>74,23 aprox.</td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Tipo B1 -->
-                                <div class="tab-pane" id="tipob1">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-6">
-                                            <!-- <img src="https://tuhogarinteligente.cl/inmobi/varas-gallardo/images/ictinos-Tipo-B1.jpg" alt="Image" class="img-responsive"> -->
-                                        </div>
-                                        <div class="col-xs-12 col-sm-6">
-                                            <h3>TIPO B1</h3>
-                                            <h4>ORIENTACIÓN NORTE</h4>
-                                            <ul class="list-unstyled">
-                                                <li>2 Dormitorios</li>
-                                                <li>2 Baños</li>
-                                            </ul>
-                                            <table class="table">
-                                                <tr>
-                                                    <td>Superficie Interior</td>
-                                                    <td>60,51 aprox.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Terraza</td>
-                                                    <td>14,04 aprox.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Superficie Total </td>
-                                                    <td>74,55 aprox.</td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Tipo B2 -->
-                                <div class="tab-pane" id="tipob2">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-6">
-                                            <img src="https://tuhogarinteligente.cl/inmobi/varas-gallardo/images/ictinos-Tipo-B2.jpg" alt="Image" class="img-responsive">
-                                        </div>
-                                        <div class="col-xs-12 col-sm-6">
-                                            <h3>TIPO B2</h3>
-                                            <h4>ORIENTACIÓN SUR</h4>
-                                            <ul class="list-unstyled">
-                                                <li>2 Dormitorios</li>
-                                                <li>2 Baños</li>
-                                            </ul>
-                                            <table class="table">
-                                                <tr>
-                                                    <td>Superficie Interior</td>
-                                                    <td>60,55 aprox.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Terraza</td>
-                                                    <td>14,04 aprox.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Superficie Total </td>
-                                                    <td>74,59 aprox.</td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Tipo B3 -->
-                                <div class="tab-pane" id="tipob3">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-6">
-                                            <img src="https://tuhogarinteligente.cl/inmobi/varas-gallardo/images/ictinos-Tipo-B3.jpg" alt="Image" class="img-responsive">
-                                        </div>
-                                        <div class="col-xs-12 col-sm-6">
-                                            <h3>TIPO B3</h3>
-                                            <h4>ORIENTACIÓN SUR</h4>
-                                            <ul class="list-unstyled">
-                                                <li>2 Dormitorios</li>
-                                                <li>2 Baños</li>
-                                            </ul>
-                                            <table class="table">
-                                                <tr>
-                                                    <td>Superficie Interior</td>
-                                                    <td>55,65 aprox.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Terraza</td>
-                                                    <td>14,02 aprox.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Superficie Total </td>
-                                                    <td>70,07 aprox.</td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <!-- Tipo C -->
-                                <div class="tab-pane" id="tipoc">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-6">
-                                            <img src="https://tuhogarinteligente.cl/inmobi/varas-gallardo/images/ictinos-Tipo-C.jpg" alt="Image" class="img-responsive">
-                                        </div>
-                                        <div class="col-xs-12 col-sm-6">
-                                            <h3>TIPO C</h3>
-                                            <h4>ORIENTACIÓN NOR ORIENTE</h4>
-                                            <ul class="list-unstyled">
-                                                <li>3 Dormitorios</li>
-                                                <li>3 Baños</li>
-                                            </ul>
-                                            <table class="table">
-                                                <tr>
-                                                    <td>Superficie Interior</td>
-                                                    <td>93,95 aprox.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Superficie Logia</td>
-                                                    <td>3,22 aprox.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Terraza</td>
-                                                    <td>20,45 aprox.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Superficie Total </td>
-                                                    <td>117,76 aprox.</td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Tipo C1 -->
-                                <div class="tab-pane" id="tipoc1">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-6">
-                                            <!-- <img src="https://tuhogarinteligente.cl/inmobi/varas-gallardo/images/ictinos-Tipo-C1.jpg" alt="Image" class="img-responsive"> -->
-                                        </div>
-                                        <div class="col-xs-12 col-sm-6">
-                                            <h3>TIPO C1</h3>
-                                            <h4>ORIENTACIÓN NOR ORIENTE</h4>
-                                            <ul class="list-unstyled">
-                                                <li>3 Dormitorios</li>
-                                                <li>3 Baños</li>
-                                            </ul>
-                                            <table class="table">
-                                                <tr>
-                                                    <td>Superficie Interior</td>
-                                                    <td>93,92 aprox.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Superficie Logia</td>
-                                                    <td>3,39 aprox.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Terraza</td>
-                                                    <td>20,45 aprox.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Superficie Total </td>
-                                                    <td>117,76 aprox.</td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Tipo C2 -->
-                                <div class="tab-pane" id="tipoc2">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-6">
-                                            <img src="https://tuhogarinteligente.cl/inmobi/varas-gallardo/images/ictinos-Tipo-C2.jpg" alt="Image" class="img-responsive">
-                                        </div>
-                                        <div class="col-xs-12 col-sm-6">
-                                            <h3>TIPO C2</h3>
-                                            <h4>ORIENTACIÓN SUR ORIENTE</h4>
-                                            <ul class="list-unstyled">
-                                                <li>3 Dormitorios</li>
-                                                <li>3 Baños</li>
-                                            </ul>
-                                            <table class="table">
-                                                <tr>
-                                                    <td>Superficie Interior</td>
-                                                    <td>93,95 aprox.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Superficie Logia</td>
-                                                    <td>3,22 aprox.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Terraza</td>
-                                                    <td>20,45 aprox.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Superficie Total </td>
-                                                    <td>117,62 aprox.</td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Tipo C3 -->
-                                <div class="tab-pane" id="tipoc3">
-                                    <div class="row">
-                                        <div class="col-xs-12 col-sm-6">
-                                            <img src="https://tuhogarinteligente.cl/inmobi/varas-gallardo/images/ictinos-Tipo-C3.jpg" alt="Image" class="img-responsive">
-                                        </div>
-                                        <div class="col-xs-12 col-sm-6">
-                                            <h3>TIPO C3</h3>
-                                            <h4>ORIENTACIÓN SUR ORIENTE</h4>
-                                            <ul class="list-unstyled">
-                                                <li>3 Dormitorios</li>
-                                                <li>3 Baños</li>
-                                            </ul>
-                                            <table class="table">
-                                                <tr>
-                                                    <td>Superficie Interior</td>
-                                                    <td>89,05 aprox.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Superficie Logia</td>
-                                                    <td>3,22 aprox.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Terraza</td>
-                                                    <td>20,83 aprox.</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Superficie Total </td>
-                                                    <td>113,10 aprox.</td>
+                                                    <td>Superficie municipal: </td>
+                                                    <td>{{x.superficieMunicipal}}</td>
                                                 </tr>
                                             </table>
                                         </div>
@@ -835,7 +484,7 @@
               <div class="col-xs-12">
                 <img src="https://tuhogarinteligente.cl/inmobi/varas-gallardo/images/inicial-head.jpg" alt="Productos Fibaro" class="img-responsive fibaro-products">
                 <h2 class="section-fibaro__title text-center">Tu hogar inteligente</h2>
-                <p class="section-fibaro__naranja lead text-center">PROYECTO VARAS GALLARDO INCLUYE LOS SIGUIENTES PRODUCTOS FIBARO</p>
+                <p class="section-fibaro__naranja lead text-center">PROYECTO Boulevard del Mar INCLUYE LOS SIGUIENTES PRODUCTOS FIBARO</p>
               </div>
             </div>
             <div class="row">
@@ -905,11 +554,11 @@
             <div class="row section--padding">
               <div class="col-xs-12">
                 <h2 class="section-map__title text-uppercase">Sala de Ventas</h2>
-                <p>Galvarino Gallardo 1560. Providencia, Santiago.</p>
+                <p> Av. Arturo Prat S/N esq. Héroes de La Concepción - Iquique.</p>
                 <p><b>Horario:</b></p>
-                <p>Lunes a Viernes de 10:30 a 18:30 horas.</p>
-                <p>Sábado y Domingo de 10:30 a 19:30 horas.</p>
-                <p><b>Teléfono:</b> +56 9 5149 6515</p>
+                <p>Lunes a Domingo de 10:30 a 18:30 horas.</p>
+                <!-- <p>Sábado y Domingo de 10:30 a 19:30 horas.</p> -->
+                <p><b>Teléfono:</b> +56 572 51 3132 </p>
                 <p><b>E-mail:</b> edificiovarasgallardo@ictinos.cl</p>
               </div>
             </div>
@@ -954,6 +603,8 @@
     <script src="./js/jquery.easing.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/angular.min.js"></script>
+    <script src="./js/app.js"></script>
     <script src="./js/main.js"></script>
     <!-- endbuild -->
 
