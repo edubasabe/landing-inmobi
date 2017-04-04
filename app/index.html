@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./css/font-awesome.min.css" />
     <link rel="stylesheet" href="./css/owl.carousel.min.css" />
     <link rel="stylesheet" href="./css/owl.theme.default.css" />
+    <link rel="stylesheet" href="./css/lightbox.css" />
     <link rel="stylesheet" href="./css/main.css">
     <!-- endbuild -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
@@ -68,7 +69,7 @@
             <div class="container container-flotante">
                 <div class="row">
                     <div class="col-xs-12 col-sm-6">
-                        <img src="https://tuhogarinteligente.cl/inmobi/varas-gallardo/images/varas-gallardo-logo-xs.png" alt="Boulevard del Mar" class="img-responsive varaslogo">
+                        <img src="./images/boulevard-del-mar.png" alt="Boulevard del Mar" class="img-responsive varaslogo">
                         <h2 class="title">Tu vida crece</h2>
                         <p class="lead">en el corazón de providencia con tu hogar inteligente</p>
                     </div>
@@ -321,16 +322,16 @@
 
             <div class="owl-carousel owl-theme">
               <div class="item">
-                  <img src="https://tuhogarinteligente.cl/inmobi/varas-gallardo/images/ictinos-slider-edificio.jpg" alt="Image" class="img-responsive">
+                  <img src="./images/loga-slider-cocina.jpg" alt="Image" class="img-responsive">
               </div>
               <div class="item">
-                  <img src="https://tuhogarinteligente.cl/inmobi/varas-gallardo/images/ictinos-slider-living.jpg" alt="Image" class="img-responsive">
+                  <img src="./images/loga-slider-living.jpg" alt="Image" class="img-responsive">
               </div>
               <div class="item">
-                  <img src="https://tuhogarinteligente.cl/inmobi/varas-gallardo/images/ictinos-slider-comedor.jpg" alt="Image" class="img-responsive">
+                  <img src="./images/loga-slider-dormitorio.jpg" alt="Image" class="img-responsive">
               </div>
               <div class="item">
-                  <img src="https://tuhogarinteligente.cl/inmobi/varas-gallardo/images/ictinos-slider-cocina.jpg" alt="Image" class="img-responsive">
+                  <img src="./images/loga-slider-bano.jpg" alt="Image" class="img-responsive">
               </div>
             </div>
         </section>
@@ -441,7 +442,9 @@
                                 <div class="tab-pane {{x.clase}}" id="{{x.tipoid}}" ng-repeat="x in records">
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-6">
+                                          <a href="{{x.imageUrl}}" data-lightbox="{{x.tipoid}}" data-title="{{x.tipoTitle}}">
                                             <img src="{{x.imageUrl}}" alt="Image" class="img-responsive">
+                                          </a>
                                         </div>
                                         <div class="col-xs-12 col-sm-6">
                                             <h3>{{x.tipoTitle}}</h3>
@@ -487,15 +490,16 @@
                 <p class="section-fibaro__naranja lead text-center">PROYECTO Boulevard del Mar INCLUYE LOS SIGUIENTES PRODUCTOS FIBARO</p>
               </div>
             </div>
-            <div class="row">
-              <div class="col-xs-12 col-sm-4">
-                <img src="https://tuhogarinteligente.cl/inmobi/varas-gallardo/images/home-center-lite.jpg" alt="Producto" class="img-responsive">
-                <h4 class="section-fibaro__naranja">HOME CENTER LITE</h4>
-                 <p class="section-fibaro__naranja">[1 unidad]</p>
-                <p>Controlador principal del Sistema FIBARO.</p>
-                  <a class="text-center center-block" href="https://tuhogarinteligente.cl/home-center-2/">Ver más detalles</a>
+            <div class="row" ng-controller="FibaroControl">
+              <div class="col-xs-12 col-sm-4" ng-repeat="x in paquetes">
+                <img src="{{x.imagenProducto}}" alt="Producto" class="img-responsive">
+                <h4 class="section-fibaro__naranja">{{x.nombreProducto}}</h4>
+                 <p class="section-fibaro__naranja">[{{x.cantProducto}}]</p>
+                 <p>{{ x.descProducto}}</p>
+                  <a class="text-center center-block" href="{{ x.link}}">Ver más detalles</a>
               </div>
-              <div class="col-xs-12 col-sm-4">
+
+              <!-- iv class="col-xs-12 col-sm-4">
                 <img src="https://tuhogarinteligente.cl/inmobi/varas-gallardo/images/motion-sensor.jpg" alt="Producto" class="img-responsive">
                 <h4 class="section-fibaro__naranja">MOTION SENSOR</h4>
                 <p class="section-fibaro__naranja">[3 unidades]</p>
@@ -508,7 +512,7 @@
                  <p class="section-fibaro__naranja">[1 unidad]</p>
                 <p>Detecta apertura de ventanas y puertas. Informa al controlador y envía una notificación a su dispositivo móvil.</p>
                 <a class="text-center center-block" href="https://tuhogarinteligente.cl/sensor-puerta-ventana/">Ver más detalles</a>
-              </div>
+              </div-->
             </div>
 
             <div class="row">
@@ -559,7 +563,7 @@
                 <p>Lunes a Domingo de 10:30 a 18:30 horas.</p>
                 <!-- <p>Sábado y Domingo de 10:30 a 19:30 horas.</p> -->
                 <p><b>Teléfono:</b> +56 572 51 3132 </p>
-                <p><b>E-mail:</b> edificiovarasgallardo@ictinos.cl</p>
+                <p><b>E-mail:</b> contacto@loga.cl</p>
               </div>
             </div>
           </div>
@@ -574,14 +578,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
-                    <span class="copyright">&copy; Copyright. Todos los derechos reservados.  Inmobiliaria Ictinos </span>
+                    <span class="copyright">&copy; Copyright. Todos los derechos reservados.  Inmobiliaria Loga </span>
                 </div>
             </div>
         </div>
     </footer>
     <script>
         function initMap() {
-          var myLatLng = {lat: -33.431268, lng: -70.616299};
+          var myLatLng = {lat: -20.240825, lng: -70.144935};
             // Create a map object and specify the DOM element for display.
             var map = new google.maps.Map(document.getElementById('map'), {
                 center: myLatLng,
@@ -602,9 +606,10 @@
     <script src="./js/jquery.min.js"></script>
     <script src="./js/jquery.easing.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/owl.carousel.min.js"></script>
     <script src="./js/angular.min.js"></script>
     <script src="./js/app.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/lightbox.min.js"></script>
     <script src="./js/main.js"></script>
     <!-- endbuild -->
 

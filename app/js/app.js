@@ -1,4 +1,8 @@
 var app = angular.module("myApp", []);
+
+//---------
+// Tipos de Depto
+//---------
 app.controller("myCtrl", function($scope) {
   $scope.records = [
        {
@@ -156,15 +160,60 @@ app.controller("myCtrl", function($scope) {
     ]
 });
 
-// app.controller("FibaroCtrl", function ($scope) {
-//   $scope.registros = [
-//
-//     {
-//       "nombreProducto" : "",
-//       "cantidad": "",
-//       "description": "",
-//       "link"
-//     }
-//
-//   ]
-// });
+
+//---------
+// Paquetes FIBARO
+//---------
+app.controller("FibaroControl", function ($scope) {
+  $scope.paquetes = [
+
+    {
+      "imagenProducto" : "./images/home-center-2.jpg",
+      "nombreProducto" : "Home Center 2",
+      "cantProducto": "1 unidad",
+      "descProducto": "Controlador principal del sistema FIBARO.",
+      "linkProducto" : "https://tuhogarinteligente.cl/home-center-2/"
+    },
+
+    {
+      "imagenProducto" : "./images/motion-sensor.jpg",
+      "nombreProducto" : "Motion Sensor",
+      "cantProducto": "1 unidad",
+      "descProducto": "Detecta el más mínimo movimiento, temperatura, vibración e intensidad de luz.",
+      "linkProducto" : "https://tuhogarinteligente.cl/motion-sensor/"
+    },
+
+    {
+      "imagenProducto" : "./images/smoke-sensor.jpg",
+      "nombreProducto" : "Smoke Sensor",
+      "cantProducto": "1 unidad",
+      "descProducto": "Detecta humo y cambios drásticos de temperatura, activando la alarma.",
+      "linkProducto" : "https://tuhogarinteligente.cl/smoke-sensor/"
+    },
+
+    {
+      "imagenProducto" : "./images/flood-sensor.jpg",
+      "nombreProducto" : "Flood Sensor",
+      "cantProducto": "1 unidad",
+      "descProducto": "Detector de inundación, constantemente mide temperatura.",
+      "linkProducto" : "https://tuhogarinteligente.cl/flood-sensor/"
+    },
+
+    {
+      "imagenProducto" : "./images/dimmer.jpg",
+      "nombreProducto" : "Dimmer",
+      "cantProducto": "2 unidades",
+      "descProducto": "Varía la intensidad de las luces. * Fuentes dimeables.",
+      "linkProducto" : "https://tuhogarinteligente.cl/dimmer/"
+    },
+
+    {
+      "imagenProducto" : "./images/cerradura-inteligente.jpg",
+      "nombreProducto" : "Cerradura Inteligente",
+      "cantProducto": "2 unidades",
+      "descProducto": "Permite la integración al sistema FIBARO.",
+      "linkProducto" : "https://tuhogarinteligente.cl/cerradura-inteligente/"
+    },
+
+  ]
+});
