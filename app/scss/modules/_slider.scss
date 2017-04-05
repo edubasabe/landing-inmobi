@@ -4,10 +4,11 @@
       @include xxs-device {
         margin: 0 auto;
         text-align: center;
-        transform: scale(.5);
+        transform: scale(.7);
       }
 
       @include sm-device {
+        max-height: 16rem;
         transform: none;
       }
     }
@@ -93,6 +94,7 @@
 
     .item {
       max-height: 66rem;
+      min-height: 30rem;
       position: relative;
 
       @include xxs-device {
@@ -105,12 +107,34 @@
 
       @include md-device {
          min-height: 66rem;
+       }
 
-        img {
-          left: 50%;
-          position: absolute;
-          top: 50%;
-          transform: translate(-50%, -50%);
+       img {
+         left: 50%;
+         position: absolute;
+         top: 50%;
+         transform: translate(-50%, -50%);
+
+       }
+
+      .mobile-pic {
+        @include xxs-device {
+          display: block;
+        }
+
+        @include md-device {
+          display: none;
+          visibility: hidden;
+        }
+      }
+
+      .desktop {
+        @include xxs-device {
+          display: none;
+        }
+
+        @include md-device {
+          display: block;
         }
       }
     }
@@ -122,8 +146,8 @@
       text-transform: uppercase;
 
       @include xxs-device {
-        font-size: 3.2rem;
-        margin-top: -2rem;
+        font-size: 2rem;
+        margin-top: -3rem;
         text-align: center;
       }
 

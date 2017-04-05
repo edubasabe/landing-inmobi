@@ -200,7 +200,7 @@ app.controller("FibaroControl", function ($scope) {
     },
 
     {
-      "imagenProducto" : "./images/dimmer.jpg",
+      "imagenProducto" : "./images/dimmer-2.jpg",
       "nombreProducto" : "Dimmer",
       "cantProducto": "2 unidades",
       "descProducto": "Varía la intensidad de las luces. * Fuentes dimeables.",

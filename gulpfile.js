@@ -75,6 +75,13 @@ gulp.task('fonts', function() {
   .pipe(gulp.dest('dist/fonts'));
 });
 
+//--CopyJS
+gulp.task('CopyJS', function () {
+  return gulp.src('app/js/*.js')
+  .pipe(gulp.dest('dist/js'));
+});
+
+
 //-- Clean
 gulp.task('clean:dist', function() {
   return del.sync('dist');
