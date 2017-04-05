@@ -77,7 +77,7 @@ gulp.task('fonts', function() {
 
 //--CopyJS
 gulp.task('CopyJS', function () {
-  return gulp.src('app/js/*.js')
+  return gulp.src('app/js/angular.min.js')
   .pipe(gulp.dest('dist/js'));
 });
 
