@@ -1,5 +1,6 @@
 .form {
   background: rgba($negro, .8);
+  border-radius: .4rem;
   margin: 0 auto;
   max-width: 36rem;
   padding: 2rem 3rem;
@@ -9,20 +10,52 @@
     border: 0;
     color: #fff;
     font-size: 2.4rem;
+    font-weight: 700;
     text-align: center;
-    text-transform: uppercase;
   }
 
+  input {
+    border-radius: .3rem;
+    font-size: 1.6rem;
+    min-height: 4.4rem;
+  }
+
+  textarea {
+    border-radius: .3rem;
+    font-size: 1.6rem;
+  }
+
+
   .btn {
+    background: $verde;
+    border: 0;
+    border-radius: .4rem;
     font-weight: bold;
-    text-transform: uppercase;
+
+    &:active {
+      background: rgba($verde, .8);
+    }
   }
 
   @include xxs-device {
+    display: none;
     margin-bottom: 4rem;
   }
 
+  @include sm-device {
+    display: block;
+    margin: 6rem auto;
+  }
+
   @include md-device {
-    margin-bottom: 6rem;
+    margin: 6rem auto;
+  }
+
+  .form-group {
+    label {
+     &.error {
+       color: $rojo;
+     }
+   }
   }
 }

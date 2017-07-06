@@ -23,7 +23,7 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <main class="main">
         <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <nav class="navbar navbar-default navbar-fixed-top navbar-right" role="navigation">
             <div class="container">
                 <div class="navbar-header page-scroll">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -32,7 +32,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                    <a class="navbar-brand page-scroll" href="#page-top">Inmobiliaria</a>
+                    <a class="navbar-brand page-scroll" href="#page-top"><span class="sr-only">Inmobiliaria</span> <img src="images/miradordepumalal-logofinal.png" srcset="images/miradordepumalal-logofinal@2x.png 2x" alt="Mirador de Pumalal"></a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -55,34 +55,33 @@
 
         <!-- Slider Section -->
         <section id="section-slider" class="section slider">
-            <div class="container container-flotante">
+            <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-6">
-                        <h2>The quick brown fox jumps</h2>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. </p>
+                        <h2 class="slider__title">Un proyecto para quienes buscan disfrutar de la naturaleza y privilegian una calidad de vida superior</h2>
                     </div>
                     <div class="col-xs-12 col-sm-6">
-                        <form class="form" action="index.html" method="post" id="formulario">
-                            <legend>Solicitar Cotización</legend>
+                        <form class="form" action="" method="post" id="formulario-contacto">
+                            <legend>Solicita una Cotización</legend>
                             <!-- nombre -->
                             <div class="form-group">
-                                <label for="nombre" class="sr-only">Nombre</label>
-                                <input id="nombre" name="nombre" type="text" placeholder="Nombre" class="form-control input-md">
+                                <label for="firstname" class="sr-only">Nombre</label>
+                                <input id="firstname" name="firstName" type="text" placeholder="Nombre" class="form-control input-md" min-lenght="2" arequired>
                             </div>
                             <!-- email -->
                             <div class="form-group">
                                 <label for="email" class="sr-only">Email</label>
-                                <input id="email" name="email" type="email" placeholder="Email" class="form-control input-md">
+                                <input id="email" name="emailAddress" type="email" placeholder="Email" class="form-control input-md" arequired>
                             </div>
                             <!-- teléfono -->
                             <div class="form-group">
                                 <label for="telefono" class="sr-only">Teléfono</label>
-                                <input id="telefono" name="telefono" type="text" placeholder="Teléfono" class="form-control input-md">
+                                <input id="telefono" name="phone" type="text" placeholder="Teléfono" class="form-control input-md" min-length="" arequired>
                             </div>
                             <!-- Mensaje -->
                             <div class="form-group">
                                 <label for="nombre" class="sr-only">Mensaje</label>
-                                <textarea id="nombre" name="mensaje" placeholder="Mensaje" class="form-control input-md"></textarea>
+                                <textarea id="nombre" name="message" placeholder="Mensaje" class="form-control input-md" arequired></textarea>
                                 <br>
                                 <input type="submit" name="" value="Solicitar" class="btn btn-primary btn-lg btn-block">
                             </div>
@@ -92,7 +91,7 @@
                 </div>
             </div>
 
-            <div class="owl-carousel owl-theme">
+            <!-- div class="owl-carousel owl-theme">
                 <div class="item">
                     <img src="http://placehold.it/1920x660" alt="Image" class="img-responsive">
                 </div>
@@ -103,29 +102,19 @@
                     <img src="http://placehold.it/1920x660" alt="Image" class="img-responsive">
                 </div>
 
-            </div>
+            </div -->
         </section>
 
 
         <!-- Features Section -->
-        <section id="section-features" class="section section--padding">
+        <section id="section-features" class="section section--padding features">
             <div class="container">
-                <div class="row" id="feature-1">
+                <div class="row" id="feature-1" style="">
                     <div class="col-xs-12 col-sm-6">
                         <img src="http://placehold.it/560x360" alt="Image" class="img-responsive">
                     </div>
                     <div class="col-xs-12 col-sm-6">
-                        <h2>The quick brown fox jumps over the lazy dog</h2>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit.</p>
-                    </div>
-                </div>
-                <div class="row" id="feature-2">
-                    <div class="col-xs-12 col-sm-6">
-                        <h2>The quick brown fox jumps over the lazy dog</h2>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit.</p>
-                    </div>
-                    <div class="col-xs-12 col-sm-6">
-                        <img src="http://placehold.it/560x360" alt="Image" class="img-responsive">
+                        <p class="lead">Mirador de Pumalal es un exclusivo proyecto que combina diseño, calidad y eficiencia energética en un entorno libre de contaminación.</p>
                     </div>
                 </div>
             </div>
@@ -234,20 +223,26 @@
     <script>
         function initMap() {
             // Create a map object and specify the DOM element for display.
+            var myLatLng = { lat: -38.6624555, lng: -72.504119 };
             var map = new google.maps.Map(document.getElementById('map'), {
-                center: {
-                    lat: -34.397,
-                    lng: 150.644
-                },
+                center: myLatLng,
                 scrollwheel: false,
-                zoom: 8
+                zoom: 15
+            });
+
+            var marker = new google.maps.Marker({
+              position: myLatLng,
+              map:map,
+              title: 'Hola Mundo!'
             });
         }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB39kQdRisms3Oi6jVbKHsPYlzqs5duuk4&callback=initMap" async defer></script>
     <!-- build:js js/master.js -->
     <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/validation.js"></script>
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>

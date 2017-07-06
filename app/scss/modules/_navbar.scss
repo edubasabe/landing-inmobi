@@ -1,0 +1,19 @@
+.navbar {
+  &-default {
+    background: #fff;
+
+
+    .navbar-nav {
+      @include sm-device {
+        float: right;
+      }
+
+      & > li {
+        & > a {
+          color: #111;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

@@ -1,34 +1,31 @@
 .slider {
-    .owl-dots {
-        left: 50%;
-        margin-top: -30px !important;
-        position: absolute;
-        transform: translateX(-50%);
-    }
+  background: url('../images/hero-3.jpg') no-repeat center top;
+  background-size: cover;
+
+  @include xxs-device {
+    min-height: 32rem;
+  }
+
+  &__title {
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0 .2rem .4rem rgba($negro, .5);
 
     @include xxs-device {
-      .owl-stage {
-        min-height: 30rem;
-      }
-
-      h2 {
-        text-align: center;
-      }
-
-      .lead {
-        text-align: justify;
-      }
+      // font-size: 2.2rem;
+      text-align: center;
     }
 
     @include sm-device {
-      h2 {
-        text-align: inherit;;
-      }
-
-      .lead {
-        text-align: inherit;
-      }
+      font-size: 3rem;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
     }
 
+    @include md-device {
+      font-size: 3.6rem;
+    }
+  }
 
 }
